@@ -1,2 +1,2 @@
-# motcham
-Create a Website to become a better coder
+# Motcham - A Platform to become a Fresh Developer
+Become a better you !
