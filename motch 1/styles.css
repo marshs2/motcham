@@ -17,10 +17,74 @@ nav{
 }
 
 /*Stephen COdes Here*/
-article{
 
+/* Common CSS */
+.pad10 {
+  padding: 10px;
 }
 
-footer{
+/* Header */
+.separator {
+    border-left: 1px solid lightgray;
+}
 
+#carousel {
+  position:relative;
+  height:275px;
+  width:450px;
+}
+
+#carousel img {
+  width: 450px;
+  height: 281px;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+@keyframes carouselFadeInOut {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#carousel img.top {
+  animation-name: carouselFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+.image {
+  float: left;
+  margin: 0px 15px 15px 0px;
+}
+
+.content p {
+  color: grey;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.headtext {
+  color: orange;
+}
+
+/* Footer */
+body > footer{
+  background:orange;
+  height: 40px;
 }

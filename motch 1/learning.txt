@@ -1,2 +1,2 @@
-What we have to do?
-???...
+Forgot to add the sections in CSS which can be a daunting task lateron
+
