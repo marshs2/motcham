@@ -1,0 +1,1 @@
+Since OS is case insensitive, we cannot rename a folder as Caps and expect git to understand its renamed.
