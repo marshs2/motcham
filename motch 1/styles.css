@@ -84,6 +84,16 @@ opacity:0;
   color: orange;
 }
 
+.first {
+  position: relative;
+  font-size: 70px;
+  float: left;
+  padding: 0px 10px 0px 0px;
+  height: 55px;
+  top: -18px;
+  font-family: cursive;
+}
+
 /* Footer */
 body > footer{
   background:orange;
