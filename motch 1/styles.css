@@ -32,6 +32,7 @@ nav{
   position:relative;
   height:275px;
   width:450px;
+  box-shadow: 2px 9px 4px #63615e;
 }
 
 #carousel img {

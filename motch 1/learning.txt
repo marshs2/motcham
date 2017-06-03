@@ -1,2 +1,7 @@
+Santhosh:-
+
+Stephen:-
 Forgot to add the sections in CSS which can be a daunting task lateron
 
+CSS Carousel Link:-
+http://css3.bradshawenterprises.com/cfimg/
