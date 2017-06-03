@@ -1,2 +1,3 @@
 # Motcham - A Platform to become a Fresh Developer
-Become a better you ! 
+What is one secret that works irrespective of people or situation? 
+Efforts.
