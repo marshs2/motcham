@@ -26,6 +26,7 @@ nav{
 /* Header */
 .separator {
     border-left: 1px solid lightgray;
+    padding-bottom: 20px;
 }
 
 #carousel {
@@ -78,6 +79,7 @@ opacity:0;
   color: grey;
   font-family: sans-serif;
   text-align: justify;
+  width: 97%;
 }
 
 .headtext {
@@ -98,4 +100,8 @@ opacity:0;
 body > footer{
   background:orange;
   height: 40px;
+}
+
+.developed {
+  padding-right: 15px;
 }
