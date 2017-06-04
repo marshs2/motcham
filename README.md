@@ -3,7 +3,7 @@ What is one secret that works irrespective of people or situation?
 
 Efforts.
 
-#Quotes
+# Quotes
 "Learning by Doing" is the best learning out there.
 
 - G
