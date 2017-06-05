@@ -46,12 +46,14 @@ nav{
 /* Header */
 .separator {
     border-left: 1px solid lightgray;
+    padding-bottom: 20px;
 }
 
 #carousel {
   position:relative;
   height:275px;
   width:450px;
+  box-shadow: 2px 9px 4px #63615e;
 }
 
 #carousel img {
@@ -97,10 +99,21 @@ opacity:0;
   color: grey;
   font-family: sans-serif;
   text-align: justify;
+  width: 97%;
 }
 
 .headtext {
   color: orange;
+}
+
+.first {
+  position: relative;
+  font-size: 70px;
+  float: left;
+  padding: 0px 10px 0px 0px;
+  height: 55px;
+  top: -18px;
+  font-family: cursive;
 }
 
 /* Footer */
@@ -108,3 +121,10 @@ body > footer{
   background:orange;
   height: 40px;
 }
+<<<<<<< HEAD
+=======
+
+.developed {
+  padding-right: 15px;
+}
+>>>>>>> 648f588a986fc4fcebbcd852065ade8f0dfb7c9f
