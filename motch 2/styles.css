@@ -6,10 +6,24 @@ body{
 }
 
 /*Santhosh codes here*/
-header{
 
+.testBox{
+  border: 1px solid #000;
+}
+header{
+  background-color: F99F8C;
 }
 
+.logoBox {
+  border: 1px solid #000;
+  width: 80%;
+  margin: 5% 0% 5% 20%;
+  text-align: center;
+}
+
+.socialIcons{
+  margin: 5% 10% 5% 0%;
+}
 .bigText{
 
 }
@@ -20,5 +34,5 @@ header{
 }
 
 footer{
-  
+
 }

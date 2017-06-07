@@ -1,0 +1,7 @@
+Santhosh learnings are recorded here......
+1. Have added column grid within row class. This makes the grid system clean.
+2.Always have the custom classes defined inside col-xs/ms/lg/sm divs.not on those divs. Will be difficult in positioning it
+
+
+
+Stephen learnings are recorded here......
