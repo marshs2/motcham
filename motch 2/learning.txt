@@ -1,6 +1,13 @@
 Santhosh learnings are recorded here......
 1. Have added column grid within row class. This makes the grid system clean.
-2.Always have the custom classes defined inside col-xs/ms/lg/sm divs.not on those divs. Will be difficult in positioning it
+2. Always have the custom classes defined inside col-xs/ms/lg/sm divs.not on those divs. Will be difficult in positioning it
+3. 'jumbotron' can be used for having the depth effect in width.
+4. covering the image all of div, we should use
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+5. Bring the image to particular position is by fixing
+  position: fixed
 
 
 
