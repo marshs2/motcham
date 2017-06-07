@@ -22,10 +22,22 @@ header{
 }
 
 .socialIcons{
-  margin: 5% 10% 5% 0%;
+  margin: 7% 10% 5% 0%;
+  padding: 5% 0% 5% 0%;
 }
-.bigText{
 
+.socialIcons span{
+  margin-left: 10%;
+}
+
+.socialIcons span i{
+  font-size: 20px;
+}
+.bigImage{
+  background-image: url('./assets/bigImage.jpg');
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /*Stephen codes here*/
