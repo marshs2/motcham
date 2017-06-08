@@ -40,9 +40,19 @@ header{
   background-size: 100%;
 }
 
+.arrow{
+  position: absolute;
+  left: 50%;
+  top: 72%;
+}
+
+.arrow i{
+  font-size: 25px;
+}
+
 /*Stephen codes here*/
 .scrollText{
-
+  min-height: 500px;
 }
 
 .posAb {
