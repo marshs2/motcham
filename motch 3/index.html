@@ -29,7 +29,72 @@
     <div class="col-md-3">
       <!-- Santhosh codes here  -->
       <div class="sideBar">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <button data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  aria-expanded="true" aria-controls="collapseOne">
+                  Starters
+                </button>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tab-pane" aria-labelledBy="headingOne">
+              <div class="panel-body">
+                <ul class="startersList">
+                  <li class="starterItem">Veg Soup</li>
+                  <li class="starterItem">Tomato Soup</li>
+                  <li class="starterItem">Mushroom Soup</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <button data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"  aria-expanded="true" aria-controls="collapseTwo">
+                  Main Course
+                </button>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tab-pane" aria-labelledBy="headingTwo">
+              <div class="panel-body">
+                <ul class="mainCourse">
+                  <li class="mainItem">Briyani</li>
+                  <li class="mainItem">Pulao</li>
+                  <li class="mainItem">Naan</li>
+                  <li class="mainItem">Roti</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <button data-toggle="collapse" data-parent="#accordion" href="#collapseThree"  aria-expanded="true" aria-controls="collapseThree">
+                  Desserts
+                </button>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tab-pane" aria-labelledBy="headingThree">
+              <div class="panel-body">
+                <ul class="desserts">
+                  <li class="dessertsItem">Icecream</li>
+                  <li class="dessertsItem">Faloda</li>
+                  <li class="dessertsItem">MilkShake</li>
+                  <li class="dessertsItem">Juice</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
+        </div>
+
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#menuHead" aria-expanded="false">
+          Menu
+        </button>
+        <div class="collapse" id="menuHead">
+          Hi
+        </div>
       </div>
     </div>
     <div class="col-md-9">
