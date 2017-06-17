@@ -33,6 +33,7 @@ header{
 .socialIcons span i{
   font-size: 20px;
   color:#120ea5;
+  cursor: pointer;
 }
 .socialIcons span i:hover{
   color:#1ddffe;
