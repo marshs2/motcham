@@ -9,16 +9,16 @@ socialLogin.provider("social", function(){
 			fbKey = obj.appId;
 			fbApiV = obj.apiVersion;
 			var d = document, fbJs, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-			fbJs = d.createElement('script'); 
-			fbJs.id = id; 
+			fbJs = d.createElement('script');
+			fbJs.id = id;
 			fbJs.async = true;
 			fbJs.src = "//connect.facebook.net/en_US/sdk.js";
 
 			fbJs.onload = function() {
-				FB.init({ 
+				FB.init({
 					appId: fbKey,
-					status: true, 
-					cookie: true, 
+					status: true,
+					cookie: true,
 					xfbml: true,
 					version: fbApiV
 				});
@@ -31,7 +31,7 @@ socialLogin.provider("social", function(){
 			var d = document, gJs, ref = d.getElementsByTagName('script')[0];
 			gJs = d.createElement('script');
 			gJs.async = true;
-			gJs.src = "//apis.google.com/js/platform.js"
+			gJs.src = "https://apis.google.com/js/platform.js"
 
 			gJs.onload = function() {
 				var params ={
@@ -136,11 +136,11 @@ socialLogin.directive("gLogin", function($rootScope, social, socialLoginService)
 					var profile = currentUser.getBasicProfile();
 					var idToken = currentUser.getAuthResponse().id_token;
 					return {
-						token: idToken, 
-						name: profile.getName(), 
-						email: profile.getEmail(), 
-						uid: profile.getId(), 
-						provider: "google", 
+						token: idToken,
+						name: profile.getName(),
+						email: profile.getEmail(),
+						uid: profile.getId(),
+						provider: "google",
 						imageUrl: profile.getImageUrl()
 					}
 				}
@@ -157,7 +157,7 @@ socialLogin.directive("gLogin", function($rootScope, social, socialLoginService)
 					socialLoginService.setProvider("google");
 					$rootScope.$broadcast('event:social-sign-in-success', fetchUserDetails());
 				}
-	        	
+
 	        });
 		}
 	}
@@ -177,10 +177,10 @@ socialLogin.directive("fbLogin", function($rootScope, social, socialLoginService
 							deferred.reject('Error occured while fetching user details.');
 						}else{
 							deferred.resolve({
-								name: res.name, 
-								email: res.email, 
-								uid: res.id, 
-								provider: "facebook", 
+								name: res.name,
+								email: res.email,
+								uid: res.id,
+								provider: "facebook",
 								imageUrl: res.picture.data.url
 							});
 						}
