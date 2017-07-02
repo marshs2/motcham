@@ -2,7 +2,7 @@ body{
   /*Santhosh codes here*/
 
 
-  /*Steohen codes here*/
+  /*Stephen codes here*/
 }
 
 /*Santhosh codes here*/
@@ -11,7 +11,7 @@ body{
   border: 1px solid #000;
 }
 header{
-  background-color: F99F8C;
+  background-color: #12a8fd;
 }
 
 .logoBox {
@@ -32,6 +32,11 @@ header{
 
 .socialIcons span i{
   font-size: 20px;
+  color:#120ea5;
+  cursor: pointer;
+}
+.socialIcons span i:hover{
+  color:#1ddffe;
 }
 .bigImage{
   background-image: url('./assets/bigImage.jpg');
@@ -41,9 +46,9 @@ header{
 }
 
 .arrow{
-  position: absolute;
+  position: relative;
   left: 50%;
-  top: 72%;
+  bottom: 55px;
 }
 
 .arrow i{

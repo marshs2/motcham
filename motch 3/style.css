@@ -1,0 +1,28 @@
+body{
+  /*Stephen codes here*/
+
+
+  /*Santhosh codes here*/
+}
+
+header{
+  /*Stephen codes here */
+  /*Santhosh: change this code when you are working*/
+  min-height: 50px;
+  background-color: #aaa;
+}
+
+.section{
+  min-height: 500px;
+}
+.sideBar{
+  /*Santhosh codes here*/
+  margin-top: 75px;
+  border-right: : 1px solid #aaa;
+}
+
+
+/*Santhosh codes here*/
+footer{
+
+}
