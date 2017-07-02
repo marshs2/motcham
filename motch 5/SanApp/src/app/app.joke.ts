@@ -1,18 +1,17 @@
+import { Input } from '@angular/core';
 import { Component } from '@angular/core';
+import { Joke } from './shared/joke.class';
 
 @Component({
 	selector: 'joke',
 	template: `
-	<h1> {{setup}}</h1>
-	<h1><p>{{punchLine}}</p></h1>
+		<div class="card card-block">
+			<div class="card-title">{{data.setup}}</div>
+			<div class="card-text" [hidden]="data.hide">{{data.punchline}}</div>
+			<button class="btn btn-primary" (click)="data.toggle()">Tell Me</button>
+		</div>
 	`
 })
 export class JokeComponent{
-	setup: String;
-	punchLine: String;
-
-	constructor(){
-		this.setup = "what did cheese say when it looked in the mirror? ";
-		this.punchLine = "Halloumi(hello me)";
-	}
+	@Input('joke') data: Joke;
 };

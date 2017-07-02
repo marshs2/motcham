@@ -11,5 +11,6 @@ export class Joke{
 
 	toggle(){
 		this.hide = !this.hide;
+		console.log("In data model",this.setup);
 	}
 }
