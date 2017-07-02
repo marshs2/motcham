@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 	<h1><p>Halloumi(hello me)</p></h1>
 	`
 })
-export class JokeComponent{};
+export class JokeComponent{
+	setup: String;
+	punchLine: String;
+};
