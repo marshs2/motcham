@@ -27,6 +27,8 @@ export class JokeFormComponent{
 
 	createJoke(setup: String, punchline: string){
 		this.jokeEmitter.emit(new Joke(setup, punchline));
+		setup = "";
+		punchline = "";
 	}
 
 
