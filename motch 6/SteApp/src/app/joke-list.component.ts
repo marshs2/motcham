@@ -34,7 +34,7 @@ export class JokeListComponent {
         var promise = new Promise((resolve, reject) => {
             setTimeout(() => {
                 alert('Async Task going to execute');
-                resolve();
+                reject();
             }, 5000);
         });
         return promise;
@@ -43,6 +43,8 @@ export class JokeListComponent {
     addJoke(event) {
         this.doAsyncTask().then(() => {
             this.jokes.unshift(event);
+        }, () => {
+            alert("Failed to Add");
         });
     }
 
