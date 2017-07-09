@@ -6,7 +6,7 @@ import { Joke } from './shared/joke.model'
     selector: 'joke-list',
     template: `
         <h1 class="heading">Ste's Jokes</h1>
-        <joke-form (jokeCreate)="doAsyncTask(addJoke($event))"></joke-form>
+        <joke-form (jokeCreate)="addJoke($event)"></joke-form>
         <joke *ngFor="let joke of jokes; let i = index" [joke]="joke" (deleteMe)="deleteJoke(i)"></joke>
     `,
     styles: [
@@ -30,15 +30,20 @@ export class JokeListComponent {
         ]
     }
 
-    doAsyncTask(cb) {
-        setTimeout(() => {
-            alert('Async Task going to execute');
-            cb();
-        }, 5000);
+    doAsyncTask() {
+        var promise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                alert('Async Task going to execute');
+                resolve();
+            }, 5000);
+        });
+        return promise;
     }
 
     addJoke(event) {
-        this.jokes.unshift(event);
+        this.doAsyncTask().then(() => {
+            this.jokes.unshift(event);
+        });
     }
 
     deleteJoke(index) {
