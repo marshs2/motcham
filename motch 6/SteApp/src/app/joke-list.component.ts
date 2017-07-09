@@ -7,7 +7,7 @@ import { Joke } from './shared/joke.model'
     template: `
         <h1 class="heading">Ste's Jokes</h1>
         <joke-form (jokeCreate)="addJoke($event)"></joke-form>
-        <joke *ngFor="let joke of jokes" [joke]="joke"></joke>
+        <joke *ngFor="let joke of jokes; let i = index" [joke]="joke" (deleteMe)="deleteJoke(i)"></joke>
     `,
     styles: [
         `
@@ -32,5 +32,9 @@ export class JokeListComponent {
 
     addJoke(event) {
         this.jokes.unshift(event);
+    }
+
+    deleteJoke(index) {
+        this.jokes.splice(index, 1);
     }
 }
