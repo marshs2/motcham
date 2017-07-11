@@ -7,7 +7,10 @@ import { Joke } from './shared/joke.model'
     template: `
         <h1 class="heading">Ste's Jokes</h1>
         <joke-form (jokeCreate)="addJoke($event)"></joke-form>
-        <joke *ngFor="let joke of jokes; let i = index" [joke]="joke" (deleteMe)="deleteJoke(i)"></joke>
+        <joke *ngFor="let joke of jokes; let i = index" [joke]="joke" (deleteMe)="deleteJoke(i)">
+            Question: <p>{{ joke.setup }}</p>
+            Answer <p>{{ joke.punchline }}</p>
+        </joke>
     `,
     styles: [
         `
