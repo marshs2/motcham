@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, OnInit, DoCheck, AfterViewChecked, AfterViewInit, AfterContentChecked, AfterContentInit, OnDestroy } from '@angular/core';
 
 import { Joke } from './shared/joke.model'
 
@@ -16,11 +16,44 @@ import { Joke } from './shared/joke.model'
   `,
   styleUrls: ['./app.component.css']
 })
-export class JokeComponent {
+export class JokeComponent implements OnChanges, OnInit, DoCheck, AfterViewChecked, AfterViewInit, AfterContentChecked, AfterContentInit, OnDestroy {
   @Input() joke: Joke;
   @Output() deleteMe = new EventEmitter();
 
   constructor() {
+    console.log(`Constructor is ${this.joke}`);
+  }
+
+  ngOnChanges() {
+    console.log(`Change is ${this.joke.setup}`);
+  }
+
+  ngOnInit() {
+    console.log(`Init is ${this.joke.setup}`);
+  }
+
+  ngDoCheck() {
+    console.log(`Do Check`);
+  }
+
+  ngAfterViewChecked() {
+    console.log(`AfterViewChecked`);
+  }
+
+  ngAfterViewInit() {
+    console.log(`AfterViewInit`);
+  }
+
+  ngAfterContentChecked() {
+    console.log(`AfterContentChecked`);
+  }
+
+  ngAfterContentInit() {
+    console.log(`AfterContentInit`);
+  }
+
+  ngOnDestroy() {
+    console.log(`OnDestroy`);
   }
 
 }
