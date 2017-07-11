@@ -6,11 +6,12 @@ import { Joke } from './shared/joke.model'
   selector: 'joke',
   template: `
     <div class="card card-block">
-      <ng-content></ng-content>
+      <ng-content select=".question"></ng-content>
       <h1 class="card-title">{{joke.setup}}</h1>
       <p class="card-text" [hidden]="joke.hide">{{joke.punchline}}</p>
       <button class="btn btn-primary" (click)="joke.toggle()">Tell me!</button>
       <button class="btn btn-secondary" (click)="this.deleteMe.emit()">Delete!</button>
+      <ng-content select=".answer"></ng-content>
     </div>
   `,
   styleUrls: ['./app.component.css']

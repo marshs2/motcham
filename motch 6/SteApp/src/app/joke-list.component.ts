@@ -8,8 +8,8 @@ import { Joke } from './shared/joke.model'
         <h1 class="heading">Ste's Jokes</h1>
         <joke-form (jokeCreate)="addJoke($event)"></joke-form>
         <joke *ngFor="let joke of jokes; let i = index" [joke]="joke" (deleteMe)="deleteJoke(i)">
-            Question: <p>{{ joke.setup }}</p>
-            Answer <p>{{ joke.punchline }}</p>
+            Question: <p class="question">{{ joke.setup }}</p>
+            Answer <p class="answer">{{ joke.punchline }}</p>
         </joke>
     `,
     styles: [
