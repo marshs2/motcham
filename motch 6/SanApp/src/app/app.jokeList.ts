@@ -20,8 +20,24 @@ export class JokeListComponent{
 		];
 	}
 
+	Async(){
+		var promiseJoke = new Promise((resolve, reject) => {
+			setTimeout(() => {
+				resolve("Promise Succeeded");
+			},5000);
+		});
+
+		return promiseJoke;
+
+	}
+
+
 	addJoke(joke){
-		this.jokes.unshift(joke);
+		this.Async().then((success) =>{
+			this.jokes.unshift(joke);
+			alert(success);	
+		});
+		
 	}
 
 	deleteJoke(index){
