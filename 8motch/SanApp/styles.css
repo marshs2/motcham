@@ -1,0 +1,45 @@
+p.recipe1{
+	text-align: center;
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-family: serif;
+}
+p.recipe1 span{
+	font-family: sans-serif;
+}
+p.recipe1 strong{
+	font-weight: 20px;
+}
+
+div.recipe2{
+	display: inline;
+	float: left;
+	margin: 30px;
+	padding: 10px;
+	max-width: 300px;
+	min-width: 10px;
+	text-overflow: hidden;
+	/*border: 1px solid black;*/
+} 
+
+p.recipe2{
+	font-size: 5em;
+}
+div.recipe2.first{
+	font-size: 7em;
+	line-height: 80px;
+}
+
+div.recipe2.second{
+	font-size: 5em;
+	line-height: 50px
+}
+
+div.recipe2.third{
+	font-size: 2em;
+	line-height: 30px;
+}
+div.recipe2.fourth{
+	font-size: 1em;
+	line-height: 25px;
+}
