@@ -1,11 +1,12 @@
-import { Component, ViewEncapsulation } from '@angular/core'
+import { Component, ViewEncapsulation, ViewChild, AfterViewInit, ElementRef } from '@angular/core'
 
 import { Joke } from './shared/joke.model'
+import { JokeComponent } from './app.component';
 
 @Component({
     selector: 'joke-list',
     template: `
-        <h1 class="heading">Ste's Jokes</h1>
+        <h1 #header class="heading">Ste's Jokes</h1>
         <joke-form (jokeCreate)="addJoke($event)"></joke-form>
         <joke *ngFor="let joke of jokes; let i = index" [joke]="joke" (deleteMe)="deleteJoke(i)">
             Question: <p class="question">{{ joke.setup }}</p>
@@ -22,7 +23,10 @@ import { Joke } from './shared/joke.model'
     ],
     encapsulation: ViewEncapsulation.None
 })
-export class JokeListComponent {
+export class JokeListComponent implements AfterViewInit {
+    @ViewChild(JokeComponent) jokeComponent: JokeComponent;
+    @ViewChild('header') HeaderEl: ElementRef;
+
     jokes: Joke[];
     
     constructor() {
@@ -33,11 +37,15 @@ export class JokeListComponent {
         ]
     }
 
+    ngAfterViewInit () {
+        console.log('The view Joke is', this.jokeComponent, this.HeaderEl);
+    }
+
     doAsyncTask() {
         var promise = new Promise((resolve, reject) => {
             setTimeout(() => {
                 alert('Async Task going to execute');
-                reject('errors');
+                resolve('errors');
             }, 5000);
         });
         return promise;

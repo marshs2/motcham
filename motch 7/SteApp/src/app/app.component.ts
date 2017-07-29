@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnChanges, OnInit, DoCheck, AfterViewChecked, AfterViewInit, AfterContentChecked, AfterContentInit, OnDestroy } from '@angular/core';
+import { Component, Input, Output, SimpleChanges, EventEmitter, OnChanges, OnInit, DoCheck, AfterViewChecked, AfterViewInit, AfterContentChecked, AfterContentInit, OnDestroy } from '@angular/core';
 
 import { Joke } from './shared/joke.model'
 
@@ -24,8 +24,16 @@ export class JokeComponent implements OnChanges, OnInit, DoCheck, AfterViewCheck
     console.log(`Constructor is ${this.joke}`);
   }
 
-  ngOnChanges() {
+  ngOnChanges(changes: SimpleChanges) {
     console.log(`Change is ${this.joke.setup}`);
+    for (let key in changes) {
+      console.log(`
+        Key ${key} changed
+        Current Changes: ${changes[key].currentValue.setup}
+        Previous Changes: ${changes[key].previousValue}
+        is First Change: ${changes[key].isFirstChange}
+      `);
+    }
   }
 
   ngOnInit() {
