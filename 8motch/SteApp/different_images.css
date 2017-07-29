@@ -1,0 +1,22 @@
+body {
+    background-image: url('./img/billboards.jpg');
+    background-repeat: no-repeat;
+    background-color: #447BB4;
+    margin: 0;
+}
+
+h2 {
+    background-image: url('./img/earth.gif');
+    background-size: 100px 94px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 450px;
+    top: 219px;
+}
+
+.no {
+    display: none;
+}
