@@ -1,0 +1,43 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.payments{
+	margin-top: 10%;
+}
+
+.payments .profile{
+	background-color: orange;
+}
+.payments .profile div{
+	display: inline;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #AA3311;
+    letter-spacing: 1px;
+}
+
+.payments .profile button{
+	background: none;
+	border: 1px dashed;
+	box-sizing: none;
+}
+
+.creditCard, .debitCard, .netBanking{
+	background-color: #CCCC00 !important;
+}
+
+.cards a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: 800;
+}
+
+.panel-body{
+	border-top: none !important;
+	font-size: 2em;
+	padding-left: 2.4%;
+}
+.panel
