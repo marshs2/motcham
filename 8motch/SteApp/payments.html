@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Getting things done!
+    </title>
+    <link rel="stylesheet" type="text/css" href="payments.css">
+    <link rel="stylesheet" type="text/css" href="../../common/libs/bootstrap/css/bootstrap.css">
+    <script src="../../common/libs/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="payments.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="row well">
+            <div class="col-sm-8">Your Name: Stephen Marshall</div>
+            <div class="pull-right">Total $250</div>
+        </div>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default row well">
+                <div class="panel-heading">
+                    <input type="radio" name="myradio" class="pull-left" />
+                    <h4 class="panel-title">
+                        <div class="col-sm-8">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                   Credit Card
+                    </a>
+                        </div>
+                    </h4>
+                </div>
+                <div class="panel-heading">
+                    <div class="col-sm-8" id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Credit Card Content
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default row well">
+                <input type="radio" name="myradio" class="pull-left" />
+                <div class="col-sm-8">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                   Debit Card
+                    </a>
+                </div>
+                <div class="col-sm-8" id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Debit Card Content
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default row well">
+                <input type="radio" name="myradio" class="pull-left" />
+                <div class="col-sm-8">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                   Net Banking
+                    </a>
+                </div>
+                <div class="col-sm-8" id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Net banking Content
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default row well">
+                <input type="radio" name="myradio" class="pull-left" />
+                <div class="col-sm-8">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                   Preferred Card
+                    </a>
+                </div>
+                <div class="col-sm-8" id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Preferred Content
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container buttons">
+            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-primary">Payment</button>
+        </div>
+    </div>
+</body>
+
+</html>
